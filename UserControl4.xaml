@@ -1,0 +1,111 @@
+﻿<UserControl x:Class="Clint_kursach3.UserControls.UserControl4"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Clint_kursach3.UserControls"
+             mc:Ignorable="d" 
+              d:DesignHeight="680" d:DesignWidth="1060" Background="White" Loaded="UserControl_Loaded" >
+    <Grid>
+        <GroupBox Header="Матрица оценок конкурирующих вариантов системы" Foreground="LightSlateGray" >
+            <DataGrid x:Name="DgUserControl4" AutoGenerateColumns="False" Margin="5" CanUserReorderColumns="False" CanUserSortColumns="False" SelectionMode="Single" AlternatingRowBackground="Aquamarine" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="*" Header="Вi/Эi" Binding="{Binding Path=expert}" IsReadOnly="True" />
+                    <DataGridTextColumn Width="*" Header="В1"  >
+                        <DataGridTextColumn.Binding>
+                            <Binding Path="Option_Mark1">
+                                <Binding.ValidationRules >
+                                    <DataErrorValidationRule />
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </DataGridTextColumn.Binding>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="В2" >
+                        <DataGridTextColumn.Binding>
+                            <Binding Path="Option_Mark2">
+                                <Binding.ValidationRules >
+                                    <DataErrorValidationRule />
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </DataGridTextColumn.Binding>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="В3" >
+                        <DataGridTextColumn.Binding>
+                            <Binding Path="Option_Mark3">
+                                <Binding.ValidationRules >
+                                    <DataErrorValidationRule />
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </DataGridTextColumn.Binding>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="В4" >
+                        <DataGridTextColumn.Binding>
+                            <Binding Path="Option_Mark4">
+                                <Binding.ValidationRules >
+                                    <DataErrorValidationRule />
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </DataGridTextColumn.Binding>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="В5" >
+                        <DataGridTextColumn.Binding>
+                            <Binding Path="Option_Mark5">
+                                <Binding.ValidationRules >
+                                    <DataErrorValidationRule />
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </DataGridTextColumn.Binding>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="В6" >
+                        <DataGridTextColumn.Binding>
+                            <Binding Path="Option_Mark6">
+                                <Binding.ValidationRules >
+                                    <DataErrorValidationRule />
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </DataGridTextColumn.Binding>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="В7" >
+                        <DataGridTextColumn.Binding>
+                            <Binding Path="Option_Mark7">
+                                <Binding.ValidationRules >
+                                    <DataErrorValidationRule />
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </DataGridTextColumn.Binding>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="В8"  >
+                        <DataGridTextColumn.Binding>
+                            <Binding Path="Option_Mark8">
+                                <Binding.ValidationRules >
+                                    <DataErrorValidationRule />
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </DataGridTextColumn.Binding>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="В9" >
+                        <DataGridTextColumn.Binding>
+                            <Binding Path="Option_Mark9">
+                                <Binding.ValidationRules >
+                                    <DataErrorValidationRule />
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </DataGridTextColumn.Binding>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="*" Header="В10" >
+                        <DataGridTextColumn.Binding>
+                            <Binding Path="Option_Mark10">
+                                <Binding.ValidationRules >
+                                    <DataErrorValidationRule />
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </DataGridTextColumn.Binding>
+                    </DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            
+            
+            
+        </GroupBox>
+    </Grid>
+</UserControl>

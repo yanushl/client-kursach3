@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Clint_kursach3.UserControls.UserControl3"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Clint_kursach3.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="680" d:DesignWidth="1060" Background="White" Loaded="UserControl_Loaded"  >
+    <Grid>
+        <GroupBox Header="Варианты системы" Foreground="LightSlateGray">
+            <DataGrid x:Name="DgUserControl3" Margin="5" FontSize="18" AutoGenerateColumns="False"  AlternatingRowBackground="PaleTurquoise" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Номер варинта" Binding="{Binding Path=Id}" Width="*"  IsReadOnly="True"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Вариант" Binding="{Binding Path=Option}" Width="2*" MinWidth="300"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Описание" Binding="{Binding Path=Summary}" Width="2*" MinWidth="300"></DataGridTextColumn>
+                 </DataGrid.Columns>
+                
+            </DataGrid>
+        </GroupBox>
+
+
+    </Grid>
+</UserControl>
